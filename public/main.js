@@ -44,7 +44,7 @@ const fetchImage = async (replacePrevious = true) => {
     // After the image is finished loading, reset the score and comments
     kittenImg.addEventListener('load', () => {
       resetScore(replacePrevious);
-      resetComments();
+      resetComments(replacePrevious);
     });
   } catch (e) {
     console.log('Failed to fetch image', e);
